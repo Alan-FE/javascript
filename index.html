@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var firstNumber = parseInt(prompt("Enter first number: "));
+        var operator = prompt("Enter the operator");
+        var secondNumber = parseInt(prompt("Enter second number: "));
+        var result;
+
+        if(operator == "+") {
+            result = firstNumber + secondNumber;
+            document.write("The result is: " + result);    
+        } else if(operator == "-") {
+            result = firstNumber - secondNumber;
+            document.write("The result is: " + result); 
+        } else if(operator == "*") {
+            result = firstNumber * secondNumber;
+            document.write("The result is: " + result); 
+        } else if(operator == "/") {
+            result = firstNumber / secondNumber;
+            document.write("The result is: " + result); 
+        } else {
+            document.write("You can enter only numbers and +, -, *, /.");
+        }
+
+    </script>
+</body>
+</html>
